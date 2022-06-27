@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gestionnaires",
+  "info": {
+    "singularName": "gestionnaire",
+    "pluralName": "gestionnaires",
+    "displayName": "gestionnaire",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    },
+    "agent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agent.agent",
+      "inversedBy": "gestionnaire"
+    },
+    "utilisateur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::utilisateur.utilisateur"
+    }
+  }
+}

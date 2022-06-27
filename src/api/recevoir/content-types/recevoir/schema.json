@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recevoirs",
+  "info": {
+    "singularName": "recevoir",
+    "pluralName": "recevoirs",
+    "displayName": "recevoir",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date_reception": {
+      "type": "datetime"
+    },
+    "don": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::don.don"
+    },
+    "cible": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cible.cible"
+    }
+  }
+}

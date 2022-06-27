@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "localites",
+  "info": {
+    "singularName": "localite",
+    "pluralName": "localites",
+    "displayName": "localite",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cible": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cible.cible",
+      "inversedBy": "localite"
+    },
+    "agent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agent.agent",
+      "mappedBy": "localite"
+    }
+  }
+}

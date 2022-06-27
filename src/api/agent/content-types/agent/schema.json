@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agents",
+  "info": {
+    "singularName": "agent",
+    "pluralName": "agents",
+    "displayName": "agent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "localite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::localite.localite",
+      "inversedBy": "agent"
+    },
+    "gestionnaire": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gestionnaire.gestionnaire",
+      "mappedBy": "agent"
+    },
+    "utilisateur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::utilisateur.utilisateur"
+    }
+  }
+}

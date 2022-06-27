@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "individuels",
+  "info": {
+    "singularName": "individuel",
+    "pluralName": "individuels",
+    "displayName": "individuel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cible": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cible.cible"
+    }
+  }
+}

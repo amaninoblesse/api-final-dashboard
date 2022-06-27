@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donnateurs",
+  "info": {
+    "singularName": "donnateur",
+    "pluralName": "donnateurs",
+    "displayName": "donnateur",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "utilisateur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::utilisateur.utilisateur"
+    },
+    "don": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::don.don",
+      "inversedBy": "donnateur"
+    },
+    "cible": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cible.cible",
+      "mappedBy": "donnateur"
+    }
+  }
+}

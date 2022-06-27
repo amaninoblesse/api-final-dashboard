@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cibles",
+  "info": {
+    "singularName": "cible",
+    "pluralName": "cibles",
+    "displayName": "cible",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "donnateur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::donnateur.donnateur",
+      "inversedBy": "cible"
+    },
+    "utilisateur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::utilisateur.utilisateur"
+    },
+    "localite": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::localite.localite",
+      "mappedBy": "cible"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recensers",
+  "info": {
+    "singularName": "recenser",
+    "pluralName": "recensers",
+    "displayName": "recenser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heure_rencesement": {
+      "type": "datetime"
+    },
+    "cible": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cible.cible"
+    },
+    "agent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agent.agent"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "utilisateurs",
+  "info": {
+    "singularName": "utilisateur",
+    "pluralName": "utilisateurs",
+    "displayName": "utilisateur"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "date_naissance": {
+      "type": "date"
+    },
+    "lieu_residence": {
+      "type": "string"
+    },
+    "nationalite": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "civilite": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "etat_matrimonial": {
+      "type": "string"
+    },
+    "fonction": {
+      "type": "string"
+    },
+    "statut": {
+      "type": "string"
+    },
+    "mdp": {
+      "type": "string"
+    },
+    "cni": {
+      "type": "string"
+    }
+  }
+}

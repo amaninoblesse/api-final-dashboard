@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menages",
+  "info": {
+    "singularName": "menage",
+    "pluralName": "menages",
+    "displayName": "menage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nbre_personne": {
+      "type": "biginteger"
+    },
+    "cible": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cible.cible"
+    }
+  }
+}
