@@ -4381,11 +4381,6 @@
     "tapable" "^2.2.0"
     "webpack-sources" "^2.2.0"
 
-"esbuild-windows-64@0.14.46":
-  "integrity" "sha512-Do2daaskfOjmCB7o3ygz6fD3K6SPjZLERiZLktzHz2oUCwsebKu/gmop0+j/XdrVIXC32wFzHzDS+9CTu9OShw=="
-  "resolved" "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.14.46.tgz"
-  "version" "0.14.46"
-
 "esbuild@^0.14.6":
   "integrity" "sha512-vdm5G1JdZBktva8dwQci/s44VbeBUg8g907xoZx77mqFZ4gU5GlMULNsdGeID+qXCXocsfYSGtE0LvqH3eiNQg=="
   "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.14.46.tgz"
@@ -7821,7 +7816,7 @@
   "resolved" "https://registry.npmjs.org/pg-int8/-/pg-int8-1.0.1.tgz"
   "version" "1.0.1"
 
-"pg-pool@^3.3.0":
+"pg-pool@^3.5.1":
   "integrity" "sha512-6iCR0wVrro6OOHFsyavV+i6KYL4lVNyYAB9RD18w66xSzN+d8b66HiwuP30Gp1SH5O9T82fckkzsRjlrhD0ioQ=="
   "resolved" "https://registry.npmjs.org/pg-pool/-/pg-pool-3.5.1.tgz"
   "version" "3.5.1"
@@ -7842,15 +7837,15 @@
     "postgres-date" "~1.0.4"
     "postgres-interval" "^1.1.0"
 
-"pg@^8.6.0", "pg@>=8.0":
-  "integrity" "sha512-qNS9u61lqljTDFvmk/N66EeGq3n6Ujzj0FFyNMGQr6XuEv4tgNTXvJQTfJdcvGit5p5/DWPu+wj920hAJFI+QQ=="
-  "resolved" "https://registry.npmjs.org/pg/-/pg-8.6.0.tgz"
-  "version" "8.6.0"
+"pg@^8.7.3", "pg@>=8.0":
+  "integrity" "sha512-HPmH4GH4H3AOprDJOazoIcpI49XFsHCe8xlrjHkWiapdbHK+HLtbm/GQzXYAZwmPju/kzKhjaSfMACG+8cgJcw=="
+  "resolved" "https://registry.npmjs.org/pg/-/pg-8.7.3.tgz"
+  "version" "8.7.3"
   dependencies:
     "buffer-writer" "2.0.0"
     "packet-reader" "1.0.0"
     "pg-connection-string" "^2.5.0"
-    "pg-pool" "^3.3.0"
+    "pg-pool" "^3.5.1"
     "pg-protocol" "^1.5.0"
     "pg-types" "^2.1.0"
     "pgpass" "1.x"
